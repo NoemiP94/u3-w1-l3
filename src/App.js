@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import ButtonComponent from './components/ButtonComponent'
+import ImageComponent from './components/ImageComponent'
 
 function App() {
   return (
@@ -17,9 +19,16 @@ function App() {
         >
           Learn React
         </a>
+        <ImageComponent
+          imageSrc="https://placekitten.com/300"
+          imageAlt="kitten"
+        />
+        <ButtonComponent btnText="Salva" />
+        <ButtonComponent btnText="Elimina" />
+        <ButtonComponent btnText="Modifica" />
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
